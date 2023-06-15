@@ -83,7 +83,8 @@ p {
 
 .nav-link {
   font-size: 25px;
-  font-family: "Montserrat-Light";
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Buttons */
