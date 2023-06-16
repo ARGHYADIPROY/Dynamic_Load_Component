@@ -16,18 +16,18 @@ document.querySelector("#close").addEventListener("click",function(){
 //   setInterval(showPopup, 300000); // 5 minutes = 300,000 milliseconds
 // };
 // init Isotope
-var $grid = $('.collection-list').isotope({
+const $grid = $('.collection-list').isotope({
   // options
 });
 // filter items on button click
 $('.filter-button-group').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
+  const filterValue = $(this).attr('data-filter');
   resetFilterBtns();
   $(this).addClass('active-filter-btn');
   $grid.isotope({ filter: filterValue });
 });
 
-var filterBtns = $('.filter-button-group').find('button');
+const filterBtns = $('.filter-button-group').find('button');
 function resetFilterBtns(){
   filterBtns.each(function(){
     $(this).removeClass('active-filter-btn');
