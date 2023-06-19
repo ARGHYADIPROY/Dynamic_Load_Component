@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import "./Collection.css";
 import image1 from "../../src/images/8.jpeg";
 import image2 from "../../src/images/3.jpeg";
