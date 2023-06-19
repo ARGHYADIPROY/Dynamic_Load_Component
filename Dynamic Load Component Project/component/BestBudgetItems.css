@@ -1,0 +1,367 @@
+.image-ad-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-content {
+    position: relative;
+    background-color: white;
+    height: 400px;
+    width:500px
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .ad-image {
+    width: 500px;
+    height: 400px;
+  }
+  
+  .ad-text {
+    position: relative;
+    text-align: center;
+    margin-top: -35px;
+    color:black;
+  }
+  
+  .latest-arrivals-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding-top: 0%;
+    text-align: center;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  .popup {
+    background-color: white;
+    width: 1000px;
+    height: 600px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    display: none;
+    z-index: 9999;
+  }
+  .popup button {
+    display: block;
+    margin: 0 10px 0px auto;
+    background-color: transparent;
+    font-size: 25px;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      46,
+      45,
+      45,
+      0.932
+    ); /* Semi-transparent black background */
+    display: none;
+    z-index: 9998; /* Place the overlay below the popup */
+  }
+  .wh {
+    width: 1000px;
+    height: 600px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .imageDiv {
+    position: relative;
+  }
+  .fixed-button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .no-underline {
+    text-decoration: none;
+  }
+  @media (max-width: 1010px) {
+    /* Adjust the styles for mobile devices */
+    .popup {
+      width: 700px;
+      height: 500px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .wh {
+      width: 700px;
+      height: 470px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further adjust the styles for smaller mobile devices */
+    .popup {
+      width: 400px;
+      height: 250px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .wh {
+      width: 400px;
+      height: 220px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .imageDiv .textToBeOnTop {
+      left: 330px;
+      top: 170px;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat-Bold", sans-serif;
+  }
+  
+  p {
+    color: #8f8f8f;
+  }
+  /* header */
+  
+  .carousel-inner h1 {
+    font-size: 60px;
+    font-family: "Kaisei Tokumin", serif;
+  }
+  .carousel-item .btn {
+    border-color: #fff;
+  }
+  .carousel-item .btn:hover {
+    border-color: #e5345b;
+  }
+  
+  /* Containers */
+  
+  .container-fluid {
+    padding: 1% 7%;
+  }
+  
+  /* Sections */
+  
+  .colored-section {
+    color: black;
+  }
+  
+  .white-section {
+    background-color: #fff;
+  }
+  
+  /* Navigation Bar */
+  
+  /* navbar */
+  .navbar {
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-brand img {
+    width: 30px;
+  }
+  .navbar-brand span {
+    letter-spacing: 2px;
+    font-size: 23px;
+    font-family: "Kaisei Tokumin", serif;
+  }
+  .nav-link:hover {
+    color: red !important;
+  }
+  .nav-link {
+    font-size: 19px;
+  }
+  
+  /* Title Section */
+  
+  #title {
+    color: #fff;
+    text-align: left;
+  }
+  
+  #title .container-fluid {
+    padding: 1% 6%;
+  }
+  /* BestSellers Section */
+  
+  #bs {
+    background-color: rgba(179, 179, 179, 0.123);
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .padd {
+    padding: 5% 0% 2% 0%;
+  }
+  .bsss {
+    width: 300px;
+    height: 300px;
+  }
+  .bs {
+    width: auto;
+    height: 300px;
+  }
+  .BestSellers:hover {
+    color: #e5345b;
+  }
+  
+  /* .collection */
+  .active-filter-btn {
+    background-color: #e5345b !important;
+    color: #fff !important;
+    border-color: #e5345b !important;
+  }
+  .filter-button-group .btn:hover {
+    color: #fff !important;
+  }
+  .collection-img span {
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+  }
+  
+  .w-100 {
+    height: 270px;
+    width: auto;
+  }
+  .w-10 {
+    height: 270px;
+    width: auto;
+  }
+  /* button */
+  .bg-primary {
+    background-color: #e5345b;
+  }
+  
+  .btn:not(.nav-btns button) {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+  }
+  .btn:not(.nav-btns button):hover {
+    background-color: #e5345b;
+    color: #fff;
+    border-color: #e5345b;
+  }
+  /* offers */
+  
+  #offers .row {
+    min-height: 60vh;
+  }
+  .offers-content span {
+    font-size: 28px;
+  }
+  .offers-content h2 {
+    font-size: 60px;
+    font-family: "Kaisei Tokumin", serif;
+  }
+  .offers-content .btn {
+    border-color: transparent;
+  }
+  /* Latest Arrival Section */
+  
+  #la {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .LatestArrivals:hover {
+    color: #e5345b;
+  }
+  .pad {
+    padding: 4% 0% 2% 0%;
+  }
+  #aboutus {
+    background-color: rgba(179, 179, 179, 0.158);
+  }
+  
+  /* Footer Section */
+  
+  .social-icon {
+    margin: 10px 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* footer */
+  @media (max-width: 1028px) {
+    #title {
+      text-align: center;
+    }
+  }
+  .modalWrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #505050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    min-width: 400px;
+    min-height: 300px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: fadeInDown 0.8s;
+  }
+  .btnClose {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,156 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.popup {
+  background-color: white;
+  width: 1000px;
+  height: 600px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  display: none;
+  z-index: 9999;
+}
+.popup button {
+  display: block;
+  margin: 0 10px 0px auto;
+  background-color: transparent;
+  font-size: 25px;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    46,
+    45,
+    45,
+    0.932
+  ); /* Semi-transparent black background */
+  display: none;
+  z-index: 9998; /* Place the overlay below the popup */
+}
+.wh {
+  width: 1000px;
+  height: 600px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.fixed-button {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.no-underline {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.carousel-inner h1 {
+  font-size: 60px;
+  font-family: "Kaisei Tokumin", serif;
+}
+.carousel-item .btn {
+  border-color: #fff;
+}
+.carousel-item .btn:hover {
+  border-color: #e5345b;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 1% 7%;
+}
+
+
+
+.colored-section {
+  color: black;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* navbar */
+.navbar {
+  -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img {
+  width: 30px;
+}
+.navbar-brand span {
+  letter-spacing: 2px;
+  font-size: 23px;
+  font-family: "Kaisei Tokumin", serif;
+}
+.nav-link:hover {
+  color: red !important;
+}
+.nav-link {
+  font-size: 19px;
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #505050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  min-width: 400px;
+  min-height: 300px;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: fadeInDown 0.8s;
+}
+.btnClose {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
