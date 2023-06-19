@@ -15,15 +15,6 @@ import image12 from "../../src/images/download1.jpeg";
 import BestBudgetItems from "./BestBudgetItems";
 // jsx
 const Collection = () => {
-  const [filteredItems,setFilteredItems]=useState([]);
-  const handleFilter = (category) => {
-    if (category === "*") {
-      setFilteredItems([]);
-    } else {
-      const items = document.getElementsByClassName(category);
-      setFilteredItems([...items]);
-    }
-  };
   return (
     <div>
     <section id="collection" class="py-5">
